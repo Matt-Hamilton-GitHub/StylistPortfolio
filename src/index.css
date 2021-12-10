@@ -1,13 +1,114 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html{
+margin:0;
+padding:0;
+background-color: rgba(190, 190, 190, 0.658);
+border: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav{
+position: relative;
+display: flex;
+flex-direction: row;
+width: 100%;
+height: 50px;
+
+}
+
+.nav-sec-right{
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 20%;
+  background: rgba(114, 88, 53, 0.329);
+  animation: nav-sway-right 3s ease-in 1;
+  box-shadow: -1px 2px 2px 1px rgba(59, 54, 54, 0.658);
+}
+
+
+.nav-sec-left{
+  position: absolute;
+  height: 100%;
+  width: 79%;
+  background: rgba(153, 149, 149, 0.575);
+  animation: nav-sway-left 3s ease-in 1;
+  box-shadow: 1px 2px 2px 1px rgba(59, 54, 54, 0.658);
+}
+
+.top-section img{
+  
+  width: 50%;
+  margin: auto;
+  box-shadow: 10px 10px 5px rgba(114, 88, 53, 0.329);
+  
+}
+
+.top-section{
+  background: rgba(27, 26, 26, 0.575);
+  position: relative;
+  
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 60vw;
+  max-height: 900px;
+  justify-content: center;
+  box-shadow: 2px 2px 2px 1px rgba(20, 19, 19, 0.658);
+ 
+}
+
+
+.top-section h1{
+  position: relative;
+  font-family: 'Gwendolyn', cursive;
+  font-size: 400%;
+  text-shadow: 2px 2px rgba(218, 143, 72, 0.603);
+}
+
+.top-section p{
+position: relative;
+font-family: 'Yuji Syuku', serif;
+font-size: 140%;
+background: rgba(228, 225, 225, 0.425);
+margin: -30px -50px;
+box-shadow: inset 2px 2px 20px 1px rgba(46, 45, 45, 0.658);
+
+}
+
+
+.top-back{
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 50vw;
+  background-color: rgba(236, 228, 228, 0.199);
+  padding: 10px;
+  /* box-shadow: 2px 2px 2px 1px rgba(59, 54, 54, 0.308); */
+}
+
+
+/* font-family: 'Fira Sans', sans-serif;
+font-family: 'Gwendolyn', cursive;
+font-family: 'Smooch', cursive; */
+
+@keyframes nav-sway-right{
+  0%{
+    width: 1px;
+    height: 50%;
+  }100%{
+    width: 20%;
+    height: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(59, 54, 54, 0.658);
+  }
+}
+
+@keyframes nav-sway-left{
+  0%{
+    width: 1px;
+    height: 50%;
+  }100%{
+    width: 79%;
+    height: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(59, 54, 54, 0.658);
+  }
 }
